@@ -1,0 +1,339 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 16px;
+}
+.MainPage {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/mainimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menuBackground {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    269.43deg,
+    #fbfbfb -19.98%,
+    #a4a4a4 82.71%,
+    #111111 136.49%
+  );
+}
+.AboutUsBackground {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #2c1b1b -1.69%, #7c3838 118.65%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.verticalHeader,
+.verticalHeaderMenu,
+.verticalHeaderAboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(39, 38, 38, 0.95);
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  width: 283px;
+  height: 100vh;
+  z-index: 10;
+}
+.verticalHeaderMenu {
+  top: 100vh;
+}
+.verticalHeaderAboutUs {
+  top: 200vh;
+  justify-content: center;
+}
+.verticalHeaderAboutUs > .verticalMenu {
+  margin: 0;
+}
+.verticalHeaderMenu > .verticalMenu {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+}
+.verticalMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100%;
+}
+.verticalSlogan {
+  color: white;
+  width: 240px;
+  font-size: 15px;
+  text-align: center;
+}
+.verticalOrder,
+.DayMealText {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(180, 131, 95, 1);
+  width: 235px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 32px;
+  color: black;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+.DayMealText {
+  color: white;
+}
+.DayMeal {
+  width: 200px;
+  height: 300px;
+  border-radius: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(99, 99, 99, 1);
+  /* padding: 20px 0; */
+  margin-top: 10px;
+}
+.DayMealPrice {
+  margin: 0;
+  color: rgba(177, 177, 177, 1);
+}
+.DayMealName {
+  margin: 40px 0 10px 0;
+  color: rgb(235, 235, 235);
+}
+.AboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: calc(100% - (10% + 283px));
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+.AboutUs > p {
+  margin: 10px 50px;
+}
+.AboutUsText {
+  /* Рестобар Тема був заснований не так давно, всьоголиш 4 роки тому, у Львові. Ми молодий заклад, готовий до експериментів та вдосконалень! Якщо ви в пошуках нових вражень та приємної атмосфери - Вам до нас! */
+
+  width: 847px;
+  height: 246px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  color: #c7c8bb;
+}
+.AboutUsHeader {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 82px;
+  color: #c7c8bb;
+  text-align: left;
+}
+.AboutUsFooter {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 41px;
+  /* identical to box height */
+
+  color: #c7c8bb;
+  text-align: right;
+}
+.verticalFeedback {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(188, 163, 145, 1);
+  width: 235px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 32px;
+  color: black;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+.verticalOrder:hover,
+.verticalFeedback:hover {
+  color: white;
+}
+.verticalOrder:active,
+.verticalFeedback:active {
+  color: green;
+}
+.logoContainer {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  width: 200px;
+}
+.container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hardcode {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 300vh;
+  width: 100%;
+  position: absolute;
+}
+.leftHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 57px;
+  width: calc(10% + 283px);
+  height: 92px;
+  background-color: rgba(55, 54, 54, 1);
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - (10% + 283px));
+  height: 92px;
+  background-color: rgba(55, 54, 54, 1);
+  position: sticky;
+  top: 0;
+  right: 0;
+  margin-top: 57px;
+  z-index: 100;
+}
+header a {
+  color: #c7c8bb;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.menu li a {
+  text-decoration: none;
+  color: rgba(199, 200, 187, 1);
+  font-size: 18px;
+  font-style: normal;
+  font-size: 20px;
+  transition: border 0.5s ease-in-out;
+}
+.menu li a:hover {
+  border-bottom: 1px solid rgba(199, 200, 187, 1);
+}
+.menu li {
+}
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-right: 10%;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.social p {
+  margin: 5px;
+  font-size: 13px;
+  color: rgba(199, 200, 187, 1);
+}
+.phone,
+.instagram,
+.facebook {
+  display: flex;
+  align-items: center;
+}
+.phonelogo,
+.instalogo,
+.facebooklogo {
+  margin: 5px;
+  /* width: 13px; */
+  /* height: 13px; */
+}
+
+.MealContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: calc(100% - (10% + 283px));
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+.ChooseMeal {
+  width: 200px;
+  height: 300px;
+  border-radius: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(99, 99, 99, 1);
+  margin: 20px 40px;
+}
+.ChooseMeal > p {
+  color: rgba(55, 55, 55, 1);
+  font-weight: bold;
+}
+
+.top{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  /* top: 5%; */
+  font-size: 50px;
+  text-decoration: none;
+  z-index: 100;
+}
