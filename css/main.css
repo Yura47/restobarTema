@@ -512,7 +512,7 @@ form > textarea {
 form > button {
   border: none;
   outline: none;
-  width: 100px;
+  width: 150px;
   min-height: 50px;
   border-radius: 25px;
   margin-top: 20px;
