@@ -468,7 +468,7 @@ ChooseMeal:focus {
   border-radius: 25px;
   background-color: rgba(180, 131, 95, 1);
   transition: background 0.3s ease-in-out;
-  font-size: 20px;
+  font-size: 15px;
 }
 #feedback > button:hover {
   background-color: greenyellow;
